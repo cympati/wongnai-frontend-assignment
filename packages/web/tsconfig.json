@@ -17,7 +17,19 @@
     "jsx": "react-jsx",
     "paths": {
       "@apiType/*": ["../../types/*"]
-    }
+    },
+    "types": [
+      "vite/client",
+      "jest",
+      "@types/testing-library__jest-dom",
+      "@types/react"
+    ],
   },
-  "include": ["./src"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+, "jest.setup.js"  ]
 }
