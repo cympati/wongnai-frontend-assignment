@@ -1,21 +1,20 @@
 import { FullMenuResponse } from "@apiType/menu/full-menu-response.model";
 import { useEffect, useState } from "react";
 import { calculatePrice } from "../common";
+import menuImage from "../assets/unnamed.png";
 
-type Props = {
+export type DialogProps = {
   handleIsSelectMenu: Function;
   isSelectMenu: boolean;
   details: FullMenuResponse;
 };
 
-const DialogFullDetails: React.FC<Props> = ({
+const DialogFullDetails: React.FC<DialogProps> = ({
   handleIsSelectMenu = () => {},
   isSelectMenu,
   details,
 }) => {
-  const [largeImage, setLargeImage] = useState(
-    "https://play-lh.googleusercontent.com/xqHA-SYnWC3HYAQi1JZgMPFaxYX2WQLy_twv44YWC9Q-NXeBUMAvjPZZ1aN8U7kNj8w"
-  );
+  const [largeImage, setLargeImage] = useState(menuImage);
 
   useEffect(() => {
     if (details.largeImage) setLargeImage(details.largeImage);

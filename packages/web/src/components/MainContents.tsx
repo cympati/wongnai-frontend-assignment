@@ -3,7 +3,6 @@ import DialogFullDetails from "./DialogFullDetails";
 import MenuSection from "./MenuSection";
 import TabBar from "./TabBar";
 import { FullMenuResponse } from "@apiType/menu/full-menu-response.model";
-// import { Options, Choices } from "@apiType/menu/full-menu.model";
 import { ShortMenuDetails } from "@apiType/menu/short-menu-response.model";
 import { RestaurantResponse } from "@apiType/restaurant/reataurant-response.model";
 import { useState, useContext, useRef } from "react";
@@ -21,7 +20,6 @@ type Props = {
 };
 
 const MainContents: React.FC<Props> = ({
-  // handleSelectType = () => {},
   restaurant,
   promotion = [],
   recommended = [],
@@ -102,15 +100,11 @@ const MainContents: React.FC<Props> = ({
       ) : (
         <div></div>
       )}
-      {isSelectMenu ? (
-        <DialogFullDetails
-          handleIsSelectMenu={handleIsSelectMenu}
-          isSelectMenu={isSelectMenu}
-          details={fullMenuDetails}
-        />
-      ) : (
-        <div></div>
-      )}
+      <DialogFullDetails
+        handleIsSelectMenu={handleIsSelectMenu}
+        isSelectMenu={isSelectMenu}
+        details={fullMenuDetails}
+      />
     </div>
   );
 };

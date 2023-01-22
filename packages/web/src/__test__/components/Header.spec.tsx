@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import { render, shallow, mount } from "enzyme";
-import { describe, expect, test } from "@jest/globals";
+import { shallow } from "enzyme";
 import Header, { HeaderProps } from "../../components/Header";
+import { describe, expect, test } from "vitest";
 
 describe("<Header />", () => {
-  let props: HeaderProps = {
+  const props: HeaderProps = {
     restaurant: {
       name: "",
       id: 0,
@@ -26,7 +25,7 @@ describe("<Header />", () => {
       },
     };
     const wrapper = shallow(<Header {...mockProps} />);
-    const restaurantStatus = wrapper.find("close-status");
-    expect(restaurantStatus).toHaveLength(1);
+    const restaurantCloseStatus = wrapper.find(".close-status");
+    expect(restaurantCloseStatus).toHaveLength(1);
   });
 });

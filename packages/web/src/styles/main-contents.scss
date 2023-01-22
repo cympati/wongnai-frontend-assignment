@@ -1,11 +1,8 @@
-.main-contents
-    {
+.main-contents {
   @include tablet {
-    // background-color: wheat;
     width: 768px;
   }
   @include desktop {
     width: 1024px;
   }
-  
 }

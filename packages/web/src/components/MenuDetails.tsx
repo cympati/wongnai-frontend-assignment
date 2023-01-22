@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ShortMenuDetails } from "@apiType/menu/short-menu-response.model";
 import { calculatePrice } from "../common";
+import menuImage from "../assets/unnamed.png";
 
 type Props = {
   detail: ShortMenuDetails;
@@ -8,9 +9,7 @@ type Props = {
 };
 
 const MenuDetails: React.FC<Props> = ({ detail, type }) => {
-  const [thumbnailImage, setThumbnailImage] = useState(
-    "https://play-lh.googleusercontent.com/xqHA-SYnWC3HYAQi1JZgMPFaxYX2WQLy_twv44YWC9Q-NXeBUMAvjPZZ1aN8U7kNj8w"
-  );
+  const [thumbnailImage, setThumbnailImage] = useState(menuImage);
 
   useEffect(() => {
     if (detail.thumbnailImage) setThumbnailImage(detail.thumbnailImage);

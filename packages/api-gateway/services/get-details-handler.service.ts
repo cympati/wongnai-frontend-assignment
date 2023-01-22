@@ -28,7 +28,7 @@ const GetDetailsHandler = async (req: Request, res: Response) => {
         restaurantDetails = result.data
 
         // Check restaurant opens or not
-        const now = formattedNow()
+        const now = formattedNow(new Date())
         if (now < restaurantDetails.activeTimePeriod.open || now > restaurantDetails.activeTimePeriod.close) isClosed = true;
 
         const restaurant: RestaurantResponse = {

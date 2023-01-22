@@ -2,14 +2,10 @@ import { useEffect, useState, useContext } from "react";
 import { RefContext, RefContextTypeSignature } from "../contexts/RefContext";
 
 type Props = {
-  // handleSelectType: Function;
   typeList: string[];
 };
 
-const TabBar: React.FC<Props> = ({
-  // handleSelectType = () => {},
-  typeList = [],
-}) => {
+const TabBar: React.FC<Props> = ({ typeList = [] }) => {
   const refContext = useContext(RefContext);
   const [selected, setSelected] = useState(typeList[0]);
 

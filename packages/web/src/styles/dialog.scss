@@ -60,23 +60,17 @@
         }
         @include tablet {
           font-size: 28px;
-          //   font-weight: 600;
         }
       }
 
       @include phone {
-        // display: flex;
-        // justify-content: space-between;
         align-items: center;
         padding: 15px 0;
         border-bottom: 4px solid rgba(225, 225, 225, 0.5);
-        // background-color: aqua;
       }
     }
     .dialog-option-contents {
-      // background-color: antiquewhite;
       .dialog-option-name-box {
-        // background-color: coral;
         .dialog-option-name {
           @include phone {
             font-size: 16px;
@@ -87,7 +81,6 @@
         }
       }
       .dialog-choice-name-box {
-        // background-color: darkgray;
         .dialog-choice-name {
           color: rgba(116, 116, 116, 0.7);
 
@@ -100,8 +93,6 @@
       @include phone {
         padding: 15px 0 10px 0;
         border-bottom: 2px solid rgba(225, 225, 225, 0.5);
-        // height: 500px;
-        // overflow: auto;
       }
       @include tablet {
         padding: 20px 0 15px 0;
@@ -127,8 +118,8 @@
     z-index: 500;
     top: 100%;
     background-color: #ffff;
-    transition: all 2s ease-in-out;
-    //   transform: translateY(0%);
+    transition: all .25s ease-in-out;
+    transform: translateY(0%);
   }
   @include tablet {
     display: flex;

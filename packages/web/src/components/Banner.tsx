@@ -1,10 +1,10 @@
+import CoverLineImage from "../assets/line.jpg";
+
 type Props = {
   coverImage?: string;
 };
 
-const Banner: React.FC<Props> = ({
-  coverImage = "https://live.staticflickr.com/65535/51062024762_3e82e4cd3e_o.jpg",
-}) => {
+const Banner: React.FC<Props> = ({ coverImage = CoverLineImage }) => {
   return (
     <div
       className="restaurant-cover-image"

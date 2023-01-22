@@ -5,7 +5,7 @@
   background-color: #ffff;
   z-index: 200;
   cursor: pointer;
-  
+
   @include phone {
     padding: 5px 0 5px 22px;
     border-bottom: 2px solid rgba(225, 225, 225, 0.5);
@@ -15,7 +15,7 @@
 
       .menu-type-label {
         font-size: 14px;
-          margin: 5px 5px 5px 0;
+        margin: 5px 5px 5px 0;
       }
     }
   }
@@ -24,18 +24,18 @@
     border-bottom: 3px solid rgba(225, 225, 225, 0.5);
     display: flex;
     justify-content: center;
-    
+
     .menu-type-label-container {
       margin: 0 15px;
 
       .menu-type-label {
         font-size: 16px;
-          margin: 8px 0px;
+        margin: 8px 0px;
       }
     }
   }
 
   .menu-type-label {
-      color: rgb(116, 116, 116);
+    color: rgb(116, 116, 116);
   }
 }

@@ -27,12 +27,12 @@
   }
 }
 
-.loader-box{
+.loader-box {
   width: 100vw;
-    height: 100vh;
-    display: flex;
-      justify-content: center;
-      align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .loader {
     border: 10px solid #ffff;
     border-top: 10px solid #007465ff;
@@ -40,18 +40,17 @@
     width: 80px;
     height: 80px;
     animation: spin 0.5s linear infinite;
-    
   }
-    
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-    
-      100% {
-        transform: rotate(360deg);
-      }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 // Banner
@@ -66,9 +65,9 @@
 @import "./dialog.scss";
 
 // Color
-// $onyx: rgba(68, 68, 68, 1);
-// $grullo: rgba(186, 170, 153, 1);
-// $pine-green: rgba(0, 116, 101, 1);
-// $cg-red: rgba(207, 68, 54, 1);
-// $raisin-black: rgba(29, 25, 26, 1);
+// rgba(68, 68, 68, 1);
+// rgba(186, 170, 153, 1);
+// rgba(0, 116, 101, 1);
+// rgba(207, 68, 54, 1);
+// rgba(29, 25, 26, 1);
 // #444444ff, #BAAA99ff, #007465ff, #CF4436ff, #1D191Aff
