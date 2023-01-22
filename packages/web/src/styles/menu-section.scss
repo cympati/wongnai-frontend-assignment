@@ -1,0 +1,16 @@
+.menu-section {
+  border-bottom: 5px solid rgba(225, 225, 225, 0.5);
+
+  h1 {
+    color: rgba(68, 68, 68, 1);
+    font-weight: 500;
+    @include phone {
+      font-size: 14px;
+      padding: 15px 0 0 22px;
+    }
+    @include tablet {
+      font-size: 16px;
+      padding: 33px 0 0 36px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.menu-details {
+  cursor: pointer;
+  @include phone {
+    border-bottom: 1px solid rgb(225, 225, 225);
+    padding: 15px 0 15px 22px;
+  }
+  @include tablet {
+    border-bottom: 2px solid rgb(225, 225, 225);
+    padding: 33px 0 36px 36px;
+  }
+  .thumbnail-image {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    @include phone {
+      width: 80px;
+      height: 80px;
+    }
+    @include tablet {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .menu-details-container {
+    @include phone {
+      display: flex;
+      position: relative;
+    }
+
+    .promotion-label-box {
+      background-color: #cf4436ff;
+      @include phone {
+        padding: 3px 6px;
+        text-align: center;
+
+        position: absolute;
+        top: 8px;
+        left: -8px;
+        border-radius: 4px;
+      }
+      @include tablet {
+        top: 12px;
+        left: -8px;
+      }
+      .promotion-label {
+        color: #ffff;
+        font-weight: 600;
+
+        @include phone {
+          font-size: 12px;
+        }
+
+        @include tablet {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .menu-info {
+      color: rgba(68, 68, 68, 1);
+      font-weight: 500;
+
+      @include phone {
+        width: 250px;
+        font-size: 14px;
+        padding-left: 18px;
+      }
+
+      @include tablet {
+        font-size: 16px;
+        padding-left: 30px;
+      }
+
+      .menu-price-box {
+        @include phone {
+          margin-top: 5px;
+          display: flex;
+        }
+
+        .menu-price {
+          color: #007465ff;
+          margin-right: 16px;
+        }
+
+        .menu-price-full {
+          color: rgb(116, 116, 116);
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

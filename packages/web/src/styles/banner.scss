@@ -1,0 +1,14 @@
+.restaurant-cover-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  @include phone {
+    height: 250px;
+  }
+  @include tablet {
+    height: 350px;
+  }
+  @include desktop {
+    height: 450px;
+  }
+}

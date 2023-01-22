@@ -1,0 +1,43 @@
+.restaurant-header {
+  .restaurant-name {
+    font-weight: 500;
+    @include phone {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 26px;
+    }
+  }
+
+  .restaurant-status {
+    @include phone {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    @include tablet {
+      margin-top: 10px;
+      font-size: 16px;
+      font-size: 20px;
+    }
+  }
+
+  .close-status{
+    color: #CF4436ff;
+  }
+
+  .open-status{
+    color: #007465ff;
+  }
+
+  @include phone {
+    padding: 20px 0 20px 22px;
+    border-bottom: 2px solid rgba(225, 225, 225, 0.5);
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 0;
+    border-bottom: 3px solid rgba(225, 225, 225, 0.5);
+  }
+}

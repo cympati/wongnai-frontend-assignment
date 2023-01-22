@@ -1,0 +1,74 @@
+// App
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "./breakpoints.scss";
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include desktop {
+      width: 1024px;
+    }
+  }
+}
+
+.loader-box{
+  width: 100vw;
+    height: 100vh;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  .loader {
+    border: 10px solid #ffff;
+    border-top: 10px solid #007465ff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 0.5s linear infinite;
+    
+  }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+}
+
+// Banner
+@import "./banner.scss";
+
+// Main contetns
+@import "./main-contents.scss";
+@import "./header.scss";
+@import "./tab-bar.scss";
+@import "./menu-section.scss";
+@import "./menu-details.scss";
+@import "./dialog.scss";
+
+// Color
+// $onyx: rgba(68, 68, 68, 1);
+// $grullo: rgba(186, 170, 153, 1);
+// $pine-green: rgba(0, 116, 101, 1);
+// $cg-red: rgba(207, 68, 54, 1);
+// $raisin-black: rgba(29, 25, 26, 1);
+// #444444ff, #BAAA99ff, #007465ff, #CF4436ff, #1D191Aff
